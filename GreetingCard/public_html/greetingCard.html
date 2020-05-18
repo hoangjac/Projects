@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Greeting Card</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <form>
+                <div id="label">
+                    <label>Holiday Card Generator!</label>
+                </div>
+                <div id="img-container">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div id="name-container">
+                    <span id="name-title">Recipient's Name:</span>
+                    <input type="text" id="name" name="name" required></div>
+                <div id="holiday-container">
+                    Pick a Holiday: 
+                    <select id="holiday">
+                        <option value="Happy Birthday">Birthday</option>
+                        <option value="Merry Christmas">Christmas</option>
+                        <option value="Happy Easter">Easter</option>
+                        <option value="Happy Thanksgiving">Thanksgiving</option>
+                        <option value="Happy New Year">New Year</option>
+                    </select></div>
+                <div id="font-container">
+                    Pick a Font:
+                    <input type="radio" id="font1" name="font" value="Arial"
+                           checked="checked"> Arial
+                    <input type="radio" id="font2" name="font" 
+                           value="Comic Sans MS"> Comic Sans MS </div>
+
+                <div id="colour-container">
+                    Text Color: <input type="color" id="colour" value="#000000">
+                </div>
+                <div id="button-container">
+                    <button type="submit" id="generate">Generate Card</button>
+                </div>
+            </form>
+        </div>
+        <canvas id="container" width="0" height="0">Sorry, your browser does not support HTML Canvas
+        </canvas><br>
+    </body>
+</html>
