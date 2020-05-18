@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Author Meta -->
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Jack's Pizza</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Roboto:400,500" rel="stylesheet">
+	<!--
+			CSS
+			============================================= -->
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header-area">
+		<div class="container">
+			<div class="header-wrap">
+				<div class="header-top d-flex justify-content-between align-items-center navbar-expand-md">
+					<div class="col menu-left">
+						<!--Empty so logo can be centered-->
+					</div>
+					<div class="col-3 logo">
+						<a href="index.html"><img class="mx-auto" src="images/logo.png" alt=""></a>
+					</div>
+					<nav class="col navbar navbar-expand-md justify-content-end">
+						<!--Empty so logo can be centered-->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+	<!--================ Start banner Area =================-->
+	<section class="home-banner-area relative">
+		<div class="container">
+			<div class="row height align-items-center justify-content-center">
+				<div class="home-banner-content col-lg-5">
+					<h1>Jack's Pizza</h1>
+					<hr>
+					<p>Customer's Information</p>
+					<div>
+						<form action="orderpizza" method="POST">
+
+							<label for="fullname" class="cusInfo">Full Name: <input class="textBox" type="text" name="fullname"
+									placeholder="John Doe" required autofocus></label>
+							<label for="email" class="cusInfo">Email: <input class="textBox" type="email" name="email"
+									placeholder="john.doe@pizza.com" required></label>
+							<label for="phone" class="cusInfo">Phone: <input class="textBox" type="tel" name="phone"
+									placeholder="(416) 325-0467" required></label>
+							<label for="address" class="cusInfo">Street:<input class="textBox" type="text" name="address"
+									placeholder="11 Dundas St." required></label><br>
+
+							<label class="delivery"><input type="radio" name="deliveryoption" value="pick-up" checked="checked"> Pick-up</label>
+							<label class="delivery"><input type="radio" name="deliveryoption" value="delivery"> Delivery </label>
+							<br><br>
+
+							<input type='hidden' name='page' value='1'> <input type="submit" value="Begin"
+								class="btn">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End banner Area =================-->
+
+	<!--================ Start Footer Area =================-->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="footer-bottom">
+				Copyright © 2020 All rights reserved | This template is made with
+				<span class="lnr lnr-heart"></span> by <a href="#">Colorlib</a>
+			</div>
+		</div>
+	</footer>
+	<!--================ End Footer Area =================-->
+
+</body>
+
+</html>
